@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # F' Build Artifacts
 build-fprime-directory/
 f-prime/
@@ -18,3 +19,21 @@ pyvenv.cfg
 .vscode/
 .idea/
 .DS_Store
+=======
+# fprime items
+logs/
+cmake-build-*
+build-artifacts/
+build-fprime-*
+*-template
+*.template.cpp
+*.template.hpp
+
+# Misc
+/venv/
+/fprime-venv/
+/.idea/
+/.vscode/
+.DS_Store
+*.gcov
+>>>>>>> 078792211510585fccb6bb0ec5a3068f2009b261
