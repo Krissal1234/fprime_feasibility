@@ -22,6 +22,8 @@ SyncBench ::~SyncBench() {}
 
 void SyncBench ::run_handler(FwIndexType portNum, U32 context) {
 
+    if (this->m_remaining_runs <= 0) return;
+
     Fw::Time curr_time = this->getTime();
     U32 secs = curr_time.getSeconds();
     U32 usecs = curr_time.getUSeconds();
@@ -47,6 +49,9 @@ void SyncBench ::run_handler(FwIndexType portNum, U32 context) {
     default:
         break;
     }
+
+    ++this->m_global_sequence_num;
+    --this->m_remaining_runs;
 }
 
 // ----------------------------------------------------------------------

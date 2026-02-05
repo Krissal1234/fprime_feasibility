@@ -26,7 +26,7 @@ class SyncBench final : public SyncBenchComponentBase {
     //Member variables
   private:
     U32 m_remaining_runs {0};
-    U32 m_global_sequence_num {0};
+    U32 m_global_sequence_num {1};
     TransportType m_active_transmission_type {TransportType::TLM};
 
   private:

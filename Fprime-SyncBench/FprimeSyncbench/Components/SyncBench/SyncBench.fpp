@@ -24,7 +24,7 @@ module FprimeSyncbench {
         @ EventSender
         event EventSender(data: BenchData) \
         severity activity high id 1\
-        format "Type: {}"
+        format "{}"
 
         @ Buffer Sender
         output port BufferSender: Fw.BufferSend
