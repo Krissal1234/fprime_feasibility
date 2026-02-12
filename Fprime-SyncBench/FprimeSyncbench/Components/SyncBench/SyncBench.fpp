@@ -1,11 +1,5 @@
 module FprimeSyncbench {
 
-    struct BenchData {
-        sequence_num: U32
-        transport_type : TransportType
-        timestamp: U64
-    }
-
     @ Benchmarking component that will send three data transport patterns to a mock simulation engine to test latency.
     active component SyncBench {
 
